@@ -1,4 +1,7 @@
-﻿import React from "react";
-export default function SuperAdminDashboard() {
-  return <div style={{ padding: 40, textAlign: "center" }}>Super Admin Dashboard — coming soon</div>;
-}
+﻿import React, { useState, useEffect } from "react";
+import StaffRouteGuard from "../../../components/staff/StaffRouteGuard.jsx";
+import staffAxios from "../../../components/api/staffAxios.js";
+import { validateInviteForm, validatePrice } from "../../../utils/validation.js";
+
+const API_BASE = import.meta.env.VITE_API_BASE || "/api";
+const TABS = ["Orders", "Agents", "Prices", "Messages"];
