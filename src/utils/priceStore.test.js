@@ -1,5 +1,4 @@
-import { describe, it, expect, beforeEach, vi, afterEach } from 'vitest';
-import fc from 'fast-check';
+import * as fc from 'fast-check';
 import { getPrices, isValidPriceResponse, _resetCache } from './priceStore.js';
 
 // ---------------------------------------------------------------------------
