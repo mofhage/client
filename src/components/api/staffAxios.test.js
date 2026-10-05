@@ -16,13 +16,7 @@ function getInterceptedConfig(staffToken, userToken) {
   return handler.fulfilled(config);
 }
 
-beforeEach(() => {
-  localStorage.clear();
-});
 
-afterEach(() => {
-  localStorage.clear();
-});
 
 // ---------------------------------------------------------------------------
 // Property-based test

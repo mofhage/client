@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import * as fc from 'fast-check';
+import fc from 'fast-check';
 import { statusToStage, getDeliveryLabel, getBadgeVariant } from './orderStatus.js';
 
 // ─── Property-Based Tests ────────────────────────────────────────────────────
